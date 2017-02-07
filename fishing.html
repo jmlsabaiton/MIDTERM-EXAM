@@ -106,9 +106,13 @@ document.form.txtTotal.value=strTotal;
 <script language="javascript">
 function calcChange()
 {
+  
 var strChange,strTender,strTotal;
+  
 strTotal=document.form.txtTotal.value;
 strTender=document.form.txtTender.value;
+  if(strTotal>strTender)
+    
 
 
 strChange=strTender-strTotal;
