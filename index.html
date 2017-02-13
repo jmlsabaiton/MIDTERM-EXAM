@@ -81,7 +81,7 @@
 <input type="submit" value="Silver" name="bS" onClick="selectColor('Silver')">
 <input type="submit" value="Teal" name="bT" onClick="selectColor('teal')">
 <input type="submit" value="Olive" name="bO" onClick="selectColor('Olive')">
-<input type="submit" value="Red" name="bO" onClick="selectColor('Red')">
+<input type="submit" value="Red" name="bR" onClick="selectColor('Red')">
 </p>
 
 <script language="javascript">
@@ -113,11 +113,14 @@ var strChange,strTender,strTotal;
 strTotal=document.form.txtTotal.value;
 strTender=document.form.txtTender.value;
   if(strTotal>strTender)
-    
-
-
-strChange=parseInt(strTender)-parseInt(strTotal);
+  {
+     alert("Not enough amount!");
+  }
+  else
+  {
+    strChange=parseInt(strTender)-parseInt(strTotal);
 document.form.txtChange.value=strChange;
+  }
 }
 </script>
 
